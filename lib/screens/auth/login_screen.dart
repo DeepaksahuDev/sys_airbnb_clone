@@ -4,6 +4,8 @@ import '../home/main_screen.dart';
 import 'signup_screen.dart';
 
 class LoginScreen extends StatefulWidget {
+  const LoginScreen({super.key});
+
   @override
   _LoginScreenState createState() => _LoginScreenState();
 }
@@ -202,42 +204,6 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
 
               SizedBox(height: 40),
-
-              // Company Information
-              Center(
-                child: Column(
-                  children: [
-                    Text(
-                      'SY Global Group',
-                      style: TextStyle(
-                        fontSize: 14,
-                        fontWeight: FontWeight.w500,
-                        color: Colors.grey[600],
-                      ),
-                    ),
-                    SizedBox(height: 4),
-                    GestureDetector(
-                      onTap: () {
-                        // TODO: Open website
-                      },
-                      child: Text(
-                        'www.syglobalgroup.com',
-                        style: TextStyle(
-                          fontSize: 12,
-                          color: Color(0xFF007AFF),
-                          decoration: TextDecoration.underline,
-                        ),
-                      ),
-                    ),
-                    SizedBox(height: 16),
-                    Text(
-                      '© 2024 SY Global Group. All rights reserved.',
-                      style: TextStyle(fontSize: 10, color: Colors.grey[500]),
-                      textAlign: TextAlign.center,
-                    ),
-                  ],
-                ),
-              ),
             ],
           ),
         ),

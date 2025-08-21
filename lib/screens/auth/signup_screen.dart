@@ -1,9 +1,10 @@
-// screens/auth/signup_screen.dart
 import 'package:flutter/material.dart';
 import '../../services/auth_service.dart';
 import '../home/main_screen.dart';
 
 class SignUpScreen extends StatefulWidget {
+  const SignUpScreen({super.key});
+
   @override
   _SignUpScreenState createState() => _SignUpScreenState();
 }
@@ -37,7 +38,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
     setState(() => _isLoading = true);
 
     final result = await _auth.signUpWithEmail(
-      _nameController.text.trim(), // ✅ pass name also
+      _nameController.text.trim(),
       _emailController.text.trim(),
       _passwordController.text.trim(),
     );
@@ -90,7 +91,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     ),
                     SizedBox(height: 8),
                     Text(
-                      'Join SY Global Real Estate',
+                      'Airbnb App',
                       style: TextStyle(fontSize: 16, color: Colors.grey[600]),
                     ),
                   ],

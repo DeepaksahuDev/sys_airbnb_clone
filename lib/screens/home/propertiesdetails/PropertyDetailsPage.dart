@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'contactagent.dart';
 
-// Dummy wishlist list (global)
 List<Map<String, String>> wishlist = [];
 
 class PropertyDetailsPage extends StatefulWidget {
